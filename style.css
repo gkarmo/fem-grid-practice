@@ -2,7 +2,11 @@
 /* Based on "Composition II in Red, Blue, and Yellow," by Piet Mondrian (1930): https://en.wikipedia.org/wiki/Piet_Mondrian */
 .wrapper {
     display:grid;
-    grid-gap: 10px;
+    /* grid gap 2 numbers are first for top and bottom or space between the rows ...second is the left and right or space between the columns */
+    grid-gap: 30px 20px;
+    /* specifies the sizes for rows and columns for the entire page ... number of numbers determines rows/columns created */
+    grid-template-rows:170px 210px 61px 61px;
+    grid-template-columns: 124px 376px 42px;
     width: 600px;
     height: 600px;
     background: url(painting.png) no-repeat;
